@@ -23,7 +23,7 @@ $stmt->bind_param("s", $matric);
 
 if ($stmt->execute()) {
     // Redirect to the display_users.php page
-    header("Location: display_users.php");
+    header("Location: display.php");
     exit;
 } else {
     echo "Error deleting user: " . $stmt->error;
